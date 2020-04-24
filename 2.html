@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <title>first session homework</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+      font-family: 'Sunflower', sans-serif;
+    }
+    a {
+      color:white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+      background-color: #3b5998;
+    }
+    ul{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+      background-color: #adb9d3;
+      color: white;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+  </style>
+</head>
+<body>
+  <h1><a href="0index.html">드라마</a></h1>
+  <div id="grid">
+    <ul>
+      <li><a href="0index.html">인사말</a></li>
+      <li><a href="1.html">음악</a></li>
+      <li><a href="2.html">드라마</a></li>
+      <li><a href="3.html">영화</a></li>
+    </ul>
+    <div id="article">
+        <h2>시트콤 프렌즈</h2>
+        <p>
+          1994년에 시작해서 2004년까지 NBC에서 인기리에 방영되었던 미국의 시트콤이다.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xHcPhdZBngw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+  </body>
+  </html>
