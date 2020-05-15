@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timeline</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Dokdo&family=Poor+Story&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="title">
+        <h1>나의 일생</h1>
+    </div>
+    <div class="buttons">
+        <button class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(dog.jpg)';
+        document.querySelector('body').style.backgroundSize='cover';
+        ">강아지</button>
+        <button class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(cat.jpg)';
+        document.querySelector('body').style.backgroundSize='cover';
+        ">고양이</button>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img src="baby.jpg">
+            <div class="date"></div>
+            <div class="what">아기</div>
+            <div class="where"></div>
+            <div class="text"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="element.jpg">
+            <div class="date"></div>
+            <div class="what">초등학교 </div>
+            <div class="where"></div>
+            <div class="text"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="middle.jpg">
+            <div class="date"></div>
+            <div class="what">중학교</div>
+            <div class="where"></div>
+            <div class="text"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="high.jpg">
+            <div class="date"></div>
+            <div class="what">고등학교</div>
+            <div class="where"></div>
+            <div class="text"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="uni.jpg">
+            <div class="date"></div>
+            <div class="what">대학교</div>
+            <div class="where"></div>
+            <div class="text"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="line"></div>
+    </div>
+    <a href="#title"><button id="tothetop">▲top</button></a>
+    
+</body>
+</html>

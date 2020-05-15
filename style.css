@@ -1,0 +1,133 @@
+#title{
+    text-align:center;
+    font-family: 'Dokdo', cursive;
+    font-size: 50px;
+}
+
+body{
+    background-color:#beebe9;
+}
+
+
+.content{
+    padding:0 10%;
+    margin-top:10%;
+}
+.img{
+    position:relative;
+    width:100px;
+    grid-column: 1;
+    border-radius:100%;
+    border: 2px solid black;
+    top: -65px;
+    left: -30px;
+    z-index: 10;
+}
+.card{
+    position:relative;
+    display:grid;
+    grid-template-columns:60px auto 30px;
+    background-color: #edf8f7;
+    width:40%;
+    margin-bottom:5%;
+    line-height:1.5%;
+    border-radius:5%;
+    border: 4px solid #1bb196;
+    box-shadow: 0px 0px  6px 2px #64a29e inset;
+    transition: 0.2s;
+}
+
+.card:hover{
+    background-color: #1bb196;
+    box-shadow:none;
+    color:white;
+
+}
+.date{
+    position:relative;
+    grid-column: 2;
+    top: -20px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 30px;
+    height: 35px;
+    padding-left:20px;
+    background-color: azure;
+    z-index:5;
+    box-shadow: #1bb196 5px 5px;
+
+}
+.what{
+    position:relative;
+    grid-column:2;
+    top:-80px;
+    font-family:'Dokdo', cursive;
+    font-size:60px;
+
+}
+.where{
+    position:relative;
+    grid-column: 2;
+    top: -80px;
+    font-family: 'Poor Story', cursive;
+    font-size: 25px;
+    color: gray;
+    
+}
+.text{
+    position:relative;
+    grid-column: 2;
+    top: -60px;
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+}
+.dot{
+    width:20px;
+    height:20px;
+    background-color:black;
+    position:absolute;
+    right: -26%;
+    top: 40%;
+    border-radius:100%;
+    background-color: #1bb196;
+
+}
+.line{
+    position:absolute;
+    top:28%;
+    left:50%;
+    margin-left:-2.5px;
+    width:5px;
+    height:220%;
+    background-color:black;
+    background-color:#1bb196;
+}
+.card:nth-child(even){
+    margin-left:60%;
+}
+.card:nth-child(even) .dot{
+    left:-30.2%
+}
+.buttons{
+    text-align:center;
+}
+
+#tothetop{
+    position:fixed;
+    left:0px;
+    bottom:100px;
+
+}
+
+@media(max-width:1000px){
+    .card{
+        width:80%;
+        margin-left:10%;
+        margin-bottom:10%;
+    }
+    .card:nth-child(even){
+        margin-left:10%
+    }
+    .dot, .line{
+        display:none;
+    }
+}
